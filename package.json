@@ -1,0 +1,32 @@
+{
+  "name": "Todo.it",
+  "version": "1.0.0",
+  "description": "Todo app with javascript using webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --mode=production",
+    "watch": "webpack --progress --watch --mode=development",
+    "server": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wiz1991/Todo.it.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wiz1991/Todo.it/issues"
+  },
+  "homepage": "https://github.com/Wiz1991/Todo.it#readme",
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.16.1"
+  }
+}

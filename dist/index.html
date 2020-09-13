@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" ></script>
+    <title>Todo.it</title>
+</head>
+
+<body>
+    <h1 class="page-title">Todo.it</h1>
+    <section class="todo-section">
+        <div class="form-container">
+            <input type="text" name="task-input" id="task-input" autocomplete="off" placeholder="Add a task">
+
+            <button type="button " class="collapsible truncate">
+                <span id="selected-project">Default Project</span><span class="caret"></span>
+            </button>
+
+
+        </div>
+        <div class="content">
+            <h3>Projects</h3>
+            <ul class="projects">
+                <li class="project selected" title="Select project">Default project</li>
+                <li class="project" title="Select project">Todo app</li>
+                <li class="project" title="Select project">Todo app</li>
+                <li class="project" title="Select project">Todo app</li>
+                <li class="project" title="Select project">Todo app</li>
+                <li class="project" title="Select project">Todo app</li>
+                <li class="project" title="Select project">Todo app</li>
+                <li class="project" title="Select project">Todo app</li>
+                <li class="project" title="Select project">Todo app</li>
+                <li class="project" title="Select project">Todo app</li>
+
+            </ul>
+            <form class="project-form">
+                <input type="text" name="project-input" id="project-input" placeholder="Add a project">
+                <button class="btn">Add</button>
+            </form>
+        </div>
+        <div class="tasks">
+        </div>
+    </section>
+</body>
+
+</html>

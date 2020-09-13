@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #dfdddd;
+}
+
+.todo-section {
+  width: 450px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-title {
+  text-align: center;
+  font-size: 5rem;
+  color: rgb(164, 164, 235);
+  opacity: 0.6;
+  padding: 2rem;
+}
+
+.form-container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: white;
+}
+
+#task-input {
+  border: none;
+  padding: 8px;
+  width: 60%;
+  outline: 0;
+  font-size: 14px;
+  font-family: 'Poppins';
+  border-right: 1px solid #c4c4b8;
+  margin: 10px 3px 10px 10px;
+}
+
+#task-input::placeholder {
+  font-size: 14px;
+  color: #646060;
+  opacity: 0.8;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: black;
+  width: 40%;
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+}
+button.truncate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button.truncate span:not(.caret) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.active,
+.collapsible:hover {
+  color: rgb(92, 91, 91);
+}
+
+.collapsible:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 11px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+
+}
+
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  max-height: 0;
+  background-color: #f1f1f1;
+  transition: max-height 0.2s ease-out;
+  border-top: 1px solid #bfbfbf;
+}
+
+.project{
+  list-style-type: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.selected{
+  color: rgb(240, 110, 110);
+}
+.project:hover{
+  color: #bfbfbf;
+}
+.project-form{
+  width: 300px;
+  box-shadow: 0px 5px 10px  rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+#project-input{
+  font-family: 'Poppins','sans-serif';
+  width: 200px;
+  margin: 18px;
+  outline: 0;
+  padding:0.8em;
+  font-size: 14px;
+  border: none;
+  margin: 0;
+}
+.btn{
+  background-color: #1386a3;
+  font-family: 'Poppins','sans-serif';
+  color: #ffffff;
+  border:none;
+  outline: 0;
+  margin: 0;
+  cursor: pointer;
+  width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .todo-section {
+    width: 100%;
+  }
+
+  #task-input {
+    width: 90%;
+  }
+
+  .page-title {
+    font-size: 4rem;
+  }
+}
