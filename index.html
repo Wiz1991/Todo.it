@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js" ></script>
+    <script src="main.js"></script>
     <title>Todo.it</title>
 </head>
 
@@ -14,7 +14,7 @@
         <div class="form-container">
             <input type="text" name="task-input" id="task-input" autocomplete="off" placeholder="Add a task">
 
-            <button type="button " class="collapsible truncate">
+            <button type="button " class="collapsible small truncate">
                 <span id="selected-project">Default Project</span><span class="caret"></span>
             </button>
 
@@ -24,24 +24,102 @@
             <h3>Projects</h3>
             <ul class="projects">
                 <li class="project selected" title="Select project">Default project</li>
-                <li class="project" title="Select project">Todo app</li>
-                <li class="project" title="Select project">Todo app</li>
-                <li class="project" title="Select project">Todo app</li>
-                <li class="project" title="Select project">Todo app</li>
-                <li class="project" title="Select project">Todo app</li>
-                <li class="project" title="Select project">Todo app</li>
-                <li class="project" title="Select project">Todo app</li>
-                <li class="project" title="Select project">Todo app</li>
-                <li class="project" title="Select project">Todo app on fire</li>
+                <li class="project">Todo app</li>
+                <li class="project">Todo app</li>
+                <li class="project">Todo app</li>
+                <li class="project">Todo app</li>
+                <li class="project">Todo app</li>
+                <li class="project">Todo app</li>
+                <li class="project">Todo app</li>
+                <li class="project">Todo app</li>
+                <li class="project">Todo app on fire</li>
 
             </ul>
             <form class="project-form">
-                <input type="text" name="project-input" id="project-input" placeholder="Add a project">
+                <input type="text" name="project-input" id="project-input" placeholder="Add a project"
+                    autocomplete="off">
                 <button class="btn">Add</button>
             </form>
             <div class="project-tooltip">Left click to select a project <br> Right click to remove a project</div>
         </div>
-        <div class="tasks">
+        <div class="todo-list">
+            <div class="task-header">
+                <button type="button " class="collapsible wide truncate">
+                    <span class="project-name">Default Project</span><span class="caret"></span>
+                </button>
+                <div class="tasks-wrapper">
+                    <ul class="tasks">
+                        <li>
+                            <p class="task-title truncate down">Design modal box</p>
+
+                            <p contenteditable="true" class="task-desc">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation </p>
+                            <p class="task-urgency">Task urgency:
+                                <select name="urgency-select" id="1">
+                                    <option value="low">low</option>
+                                    <option value="medium">medium</option>
+                                    <option value="high">high</option>
+                                </select></p>
+                        </li>
+                        <li>Finish design</li>
+                        <li>Publish</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+
+
+            <div class="task-header">
+                <button type="button " class="collapsible wide truncate">
+                    <span class="project-name">Default Project</span><span class="caret"></span>
+                </button>
+                <div class="tasks-wrapper">
+                    <ul class="tasks">
+                        <li>
+                            <p class="task-title truncate down">Design modal box</p>
+
+                            <p contenteditable="true" class="task-desc">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation </p>
+                            <p class="task-urgency">Task urgency:
+                                <select name="urgency-select" id="1">
+                                    <option value="low">low</option>
+                                    <option value="medium">medium</option>
+                                    <option value="high">high</option>
+                                </select></p>
+                        </li>
+                        <li>Finish design</li>
+                        <li>Publish</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="task-header">
+                <button type="button " class="collapsible wide truncate">
+                    <span class="project-name">Default Project</span><span class="caret"></span>
+                </button>
+                <div class="tasks-wrapper">
+                    <ul class="tasks">
+                        <li>
+                            <p class="task-title truncate down">Design modal box</p>
+
+                            <p contenteditable="true" class="task-desc">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation </p>
+                            <p class="task-urgency">Task urgency:
+                                <select name="urgency-select" id="1">
+                                    <option value="low">low</option>
+                                    <option value="medium">medium</option>
+                                    <option value="high">high</option>
+                                </select></p>
+                        </li>
+                        <li>Finish design</li>
+                        <li>Publish</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
 </body>
